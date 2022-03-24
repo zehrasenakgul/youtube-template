@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Youtube</title>
+</head>
+
+
+<body class="dark">
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="home-menu">
+                <div class="menu-icon"><i class="fa fa-bars"></i></div>
+                <img src="images/logo/lightLogo.png" alt="">
+            </div>
+            <div class="search-area">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search "></i></button>
+                <button type="submit" class="button-microphone"><i class="fa fa-microphone "></i></button>
+
+            </div>
+            <div class="main-head">
+                <i class="fa fa-upload "></i>
+                <i class="fa fa-bell "></i>
+
+                <button class="switch active" id="switch">
+                    <span>
+                        <span class="iconify" data-icon="mdi:white-balance-sunny" data-width="30"></span>
+                    </span>
+                    <span>
+                        <span class="iconify" data-icon="mdi:moon-waning-crescent" data-width="30"></span>
+                    </span>
+                </button>
+
+                <div class="nav-icon"><i class="fa fa-circle fa-2x"></i></div>
+            </div>
+        </header>
+
+        <!-- Aside and Video Content -->
+        <div class="content">
+            <!-- Navigation -->
+            <aside id="aside" class="animated hide">
+                <div class="main-aside">
+                    <ul id="main-aside-items">
+                        <li><a href="#"><i class="fa fa-home "></i><span>Home</span></a></li>
+                        <li><a href="#"><i class="fa fa-fire "></i><span>Trending</span></a></li>
+                        <li><a href="#"><i class="fa fa-check-circle "></i><span>Subscription</span></a></li>
+                    </ul>
+                </div>
+                <div class="library">
+                    <p>Library</p>
+                    <ul class="library-items">
+                        <li><a href="javascript:void()"><i class="fa fa-history "></i><span>History</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-clock-o "></i><span>Watch later</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-play "></i><span>List 1</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-play "></i><span>List 2</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-chevron-down "></i><span>Show more</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscriptions">
+                    <p>Subscriptions</p>
+                    <ul class="subscription-items">
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+
+            <article>
+                <div class="multi-container">
+                    <div class="hs__wrapper">
+
+                        <ul class="hs">
+                            <li class="hs__item active">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                        Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+                            <li class="hs__item">
+
+                                <div class="hs__item__description"><span class="hs__item__title">Amazing title
+                                    </span></div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <section class="section pt-50 pb-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/pHJGdebH14k">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Dünyanın En Fakir Ülkesi </h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Ruhi Çenet Medya</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card">
+                                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/m5J6-bCMz3Y">
+                                    </iframe>
+                                    <div class="card-body d-grid video-list-layout">
+                                        <div class="card-profile">
+                                            <img src="images/images/avtar13.jpg" alt="">
+                                        </div>
+                                        <div class="card-title">
+                                            <div class="d-grid video-list-title">
+                                                <h3>Eurovision songs with live orchestra</h3><i class="fa fa-ellipsis-v"></i>
+                                            </div>
+                                            <h4>Şebnem Paker</h4>
+                                            <span>4,9 Mn görüntüleme</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </article>
+
+
+
+
+
+        </div>
+        <!-- User Nav -->
+        <nav id="nav" class="animated hide">
+            <div class="user-id">
+                <div><i class="fa fa-circle fa-2x"></i></div>
+                <div>
+                    <div id="user-name">User name</div>
+                    <div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e49197819689858d88a48389858d88ca878b89">[email&#160;protected]</a></div>
+                </div>
+            </div>
+            <div class="nav-groups">
+                <ul class="acc-nav">
+                    <li class="nav-item"><i class="fa fa-user-circle fa-lg "></i><span>My channel</span></li>
+                    <li class="nav-item"><i class="fa fa-cog fa-lg "></i><span>Creator studio</span></li>
+                    <li class="nav-item"><i class="fa fa-users fa-lg "></i><span>Switch account</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                    <li class="nav-item"><i class="fa fa-sign-out-alt fa-lg "></i><span>Sign out</span></li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="main-config">
+                    <li class="nav-item"><i class="fa fa-moon fa-lg "></i><span>Dark theme: off</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                    <li class="nav-item"><i class="fa fa-cog fa-lg "></i><span>Settings</span></li>
+                    <li class="nav-item"><i class="fa fa-question-circle fa-lg "></i><span>Help</span></li>
+                    <li class="nav-item"><i class="fa fa-comment fa-lg "></i><span>Send feedback</span></li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="misc-config">
+                    <li class="nav-item"><span>Language: English</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Location: Colombia</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Restricted Mode: Off</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Restore old Youtube</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+    <script src="js/script.js"></script>
+    <script>
+        // work in progress - needs some refactoring and will drop JQuery i promise :)
+        var instance = $(".hs__wrapper");
+        $.each(instance, function(key, value) {
+
+            var arrows = $(instance[key]).find(".arrow"),
+                prevArrow = arrows.filter('.arrow-prev'),
+                nextArrow = arrows.filter('.arrow-next'),
+                box = $(instance[key]).find(".hs"),
+                x = 0,
+                mx = 0,
+                maxScrollWidth = box[0].scrollWidth - (box[0].clientWidth / 2) - (box.width() / 2);
+
+            $(arrows).on('click', function() {
+
+                if ($(this).hasClass("arrow-next")) {
+                    x = ((box.width() / 2)) + box.scrollLeft() - 10;
+                    box.animate({
+                        scrollLeft: x,
+                    })
+                } else {
+                    x = ((box.width() / 2)) - box.scrollLeft() - 10;
+                    box.animate({
+                        scrollLeft: -x,
+                    })
+                }
+
+            });
+
+            $(box).on({
+                mousemove: function(e) {
+                    var mx2 = e.pageX - this.offsetLeft;
+                    if (mx) this.scrollLeft = this.sx + mx - mx2;
+                },
+                mousedown: function(e) {
+                    this.sx = this.scrollLeft;
+                    mx = e.pageX - this.offsetLeft;
+                },
+                scroll: function() {
+                    toggleArrows();
+                }
+            });
+
+            $(document).on("mouseup", function() {
+                mx = 0;
+            });
+
+            function toggleArrows() {
+                if (box.scrollLeft() > maxScrollWidth - 10) {
+                    // disable next button when right end has reached 
+                    nextArrow.addClass('disabled');
+                } else if (box.scrollLeft() < 10) {
+                    // disable prev button when left end has reached 
+                    prevArrow.addClass('disabled')
+                } else {
+                    // both are enabled
+                    nextArrow.removeClass('disabled');
+                    prevArrow.removeClass('disabled');
+                }
+            }
+
+        });
+    </script>
+
+    <script>
+        const buttonDarkMode = document.querySelector("#switch");
+
+
+        buttonDarkMode.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            buttonDarkMode.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>

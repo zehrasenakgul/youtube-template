@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Single Video List</title>
+</head>
+
+
+<body class="dark">
+    <div class="wrapper">
+        <!-- Header -->
+        <header>
+            <div class="home-menu">
+                <div class="menu-icon"><i class="fa fa-bars"></i></div>
+                <img src="images/logo/lightLogo.png" alt="">
+            </div>
+            <div class="search-area">
+                <input type="text" placeholder="Search">
+                <button type="submit"><i class="fa fa-search fa-lg"></i></button>
+            </div>
+            <div class="main-head">
+                <i class="fa fa-upload fa-lg"></i>
+                <i class="fa fa-bell fa-lg"></i>
+                <button class="switch" id="switch">
+                    <span>
+                      <span class="iconify" data-icon="mdi:white-balance-sunny" data-width="30"></span>
+                    </span>
+                    <span>
+                      <span class="iconify" data-icon="mdi:moon-waning-crescent" data-width="30"></span>
+                    </span>
+                  </button>
+                <div class="nav-icon"><i class="fa fa-circle fa-2x"></i></div>
+            </div>
+        </header>
+        <!-- Aside and Video Content -->
+        <div class="content">
+            <!-- Navigation -->
+            <aside id="aside" class="animated hide">
+                <div class="main-aside">
+                    <ul id="main-aside-items">
+                        <li><a href="#"><i class="fa fa-home "></i><span>Home</span></a></li>
+                        <li><a href="#"><i class="fa fa-fire "></i><span>Trending</span></a></li>
+                        <li><a href="#"><i class="fa fa-check-circle "></i><span>Subscription</span></a></li>
+                    </ul>
+                </div>
+                <div class="library">
+                    <p>Library</p>
+                    <ul class="library-items">
+                        <li><a href="javascript:void()"><i class="fa fa-history "></i><span>History</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-clock-o "></i><span>Watch later</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-play "></i><span>List 1</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-play "></i><span>List 2</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-chevron-down "></i><span>Show more</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subscriptions">
+                    <p>Subscriptions</p>
+                    <ul class="subscription-items">
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                        <li><a href="javascript:void()"><i class="fa fa-circle "></i><span>Channel #</span></a></li>
+                    </ul>
+                </div>
+            </aside>
+            <!-- Video Content -->
+            <article>
+                <section class="section pt-50 pb-100  playList">
+                    <div class="container">
+                        <div class="row">
+                            <div id="playlist">
+
+                                <div id="video-dis">
+                                    <iframe id="display-frame" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <div class="video-desc">
+                                        <h3>Simülatörle FPV Drone Pilotu Olmak </h3>
+                                        <div class="desc d-grid">
+                                            <span>16.860 görüntüleme</span>
+                                            <a href=""><i class="fa fa-thumbs-up"> </i></a>
+                                            <a href=""><i class="fa fa-thumbs-down"> </i></a>
+                                            <a href=""><i class="fa fa-share"> </i></a>
+                                            <a href=""><i class="fa fa-plus"> </i></a>
+                                            <a href=""><i class="fa fa-ellipsis-h"> </i></a>
+                                        </div>
+                                        <hr style="border-top:1px solid hsl(0, 0%, 18.82%)">
+                                        <div class="profile-des">
+                                            <div class="channel-header" id="channel-bg">
+                                                <div class="channel-profile d-flex">
+                                                    <img src="https://yt3.ggpht.com/ytc/AKedOLTu_kPjjqcqNsiGyE1-x_IsI4Tz6hQXbmYX7qv35w=s176-c-k-c0x00ffffff-no-rj" alt="">
+                                                    <div class="channe-sub-title">
+                                                        <h3>Lezzetli Robot Tarifleri </h3>
+                                                        <span>1,62 Mn abone</span>
+                                                    </div>
+                                                </div>
+                                                <div class="channel-button ">
+                                                    <button class="btn btn-danger">ABONE OL</button>
+                                                    <div class="channel-bell">
+                                                        <i class="fa fa-bell"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <hr style="border-top:1px solid hsl(0, 0%, 18.82%)">
+
+                                        <div class="comment mobile-hide">
+                                            <div class="col-md-12" id="fbcomment">
+                                                <div class="body_comment">
+                                                    <div class="d-grid comment-area">
+                                                        <div class="avatar_comment ">
+                                                            <img src="https://yt3.ggpht.com/ytc/AKedOLTzA-ZveEGKkkfhBeeB-Z_gUCBceiFfGnhlIg=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                        </div>
+                                                        <div class="box_comment ">
+                                                            <textarea class="commentar" placeholder="Herkese açık bir yorum ekle..."></textarea>
+                                                            <div class="box_post" id="first_comment">
+                                                                <div class="pull-right">
+                                                                    <button onclick="delete_comment()" class="btn delete" id="first-delete" type="button" value="1">İPTAL</button>
+
+                                                                    <button onclick="submit_comment()" class="btn comment_add" type="button" value="1">YORUM YAP</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <ul id="list_comment" class="col-md-12">
+                                                            <!-- Start List Comment 1 -->
+                                                            <li class="box_result d-grid">
+                                                                <div class="avatar_comment ">
+                                                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSdPizcp4gX6_3uXufZRgTa6xhE94f0jwxt6Q=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                </div>
+                                                                <div class="result_comment ">
+                                                                    <h4>Nath Ryuzaki <span>1 yıl önce</span></h4>
+                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                    <div class="tools_comment">
+
+                                                                        <i class="fa fa-thumbs-o-up fa-2x"></i> <span class="count">5</span>
+                                                                        <i class="fa fa-thumbs-o-down fa-2x"></i> <span class="count">3</span>
+                                                                        <span>YANITLA</span>
+                                                                    </div>
+                                                                    <ul class="child_replay">
+                                                                        <li class="box_reply d-grid">
+                                                                            <div class="avatar_comment ">
+                                                                                <img src="https://yt3.ggpht.com/ytc/AKedOLS1ciFmlrSimFzB01fti_CVrhmvTLrobzRsgQ=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                            </div>
+                                                                            <div class="box_comment ">
+                                                                                <textarea class="commentar_reply" placeholder="Herkese açık bir yanıt ekle..."></textarea>
+                                                                                <div class="box_post reply" id="reply">
+                                                                                    <div class="pull-right">
+                                                                                        <button onclick="delete_comment()" class="btn delete" id="reply-delete" type="button" value="1">İPTAL</button>
+
+                                                                                        <button onclick="submit_comment()" class="btn comment_add" type="button" value="1">YANIT EKLE</button>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </li>
+                                                                        <li class="box_reply d-grid">
+                                                                            <div class="avatar_comment ">
+                                                                                <img src="https://yt3.ggpht.com/ytc/AKedOLSdPizcp4gX6_3uXufZRgTa6xhE94f0jwxt6Q=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                            </div>
+                                                                            <div class="result_comment ">
+                                                                                <h4>Sugito</h4>
+                                                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                                                                </p>
+                                                                                <div class="tools_comment">
+
+                                                                                    <i class="fa fa-thumbs-o-up fa-2x"></i> <span class="count">5</span>
+                                                                                    <i class="fa fa-thumbs-o-down fa-2x"></i> <span class="count">3</span>
+                                                                                    <span>YANITLA</span>
+                                                                                </div>
+                                                                                <ul class="child_replay"></ul>
+                                                                            </div>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </li>
+
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="menu-wrapper" class="desktop-hide">
+
+                                            <div id="menu-nav">
+                                                <div class="col-md-12" id="fbcomment">
+                                                    <div class="body_comment">
+                                                        <div class="d-grid comment-area">
+                                                            <div class="avatar_comment ">
+                                                                <img src="https://yt3.ggpht.com/ytc/AKedOLTzA-ZveEGKkkfhBeeB-Z_gUCBceiFfGnhlIg=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                            </div>
+                                                            <div class="box_comment ">
+                                                                <textarea class="commentar" placeholder="Herkese açık bir yorum ekle..."></textarea>
+                                                                <div class="box_post" id="first_comment">
+                                                                    <div class="pull-right">
+                                                                        <button onclick="delete_comment()" class="btn delete" id="first-delete" type="button" value="1">İPTAL</button>
+
+                                                                        <button onclick="submit_comment()" class="btn comment_add" type="button" value="1">YORUM YAP</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <ul id="list_comment" class="col-md-12">
+                                                                <!-- Start List Comment 1 -->
+                                                                <li class="box_result d-grid">
+                                                                    <div class="avatar_comment ">
+                                                                        <img src="https://yt3.ggpht.com/ytc/AKedOLSdPizcp4gX6_3uXufZRgTa6xhE94f0jwxt6Q=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                    </div>
+                                                                    <div class="result_comment ">
+                                                                        <h4>Nath Ryuzaki <span>1 yıl önce</span></h4>
+                                                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.</p>
+                                                                        <div class="tools_comment">
+
+                                                                            <i class="fa fa-thumbs-o-up fa-2x"></i> <span class="count">5</span>
+                                                                            <i class="fa fa-thumbs-o-down fa-2x"></i> <span class="count">3</span>
+                                                                            <span>YANITLA</span>
+                                                                        </div>
+                                                                        <ul class="child_replay">
+                                                                            <li class="box_reply d-grid">
+                                                                                <div class="avatar_comment ">
+                                                                                    <img src="https://yt3.ggpht.com/ytc/AKedOLS1ciFmlrSimFzB01fti_CVrhmvTLrobzRsgQ=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                                </div>
+                                                                                <div class="box_comment ">
+                                                                                    <textarea class="commentar_reply" placeholder="Herkese açık bir yanıt ekle..."></textarea>
+                                                                                    <div class="box_post reply" id="reply">
+                                                                                        <div class="pull-right">
+                                                                                            <button onclick="delete_comment()" class="btn delete" id="reply-delete" type="button" value="1">İPTAL</button>
+
+                                                                                            <button onclick="submit_comment()" class="btn comment_add" type="button" value="1">YANIT EKLE</button>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </li>
+                                                                            <li class="box_reply d-grid">
+                                                                                <div class="avatar_comment ">
+                                                                                    <img src="https://yt3.ggpht.com/ytc/AKedOLSdPizcp4gX6_3uXufZRgTa6xhE94f0jwxt6Q=s88-c-k-c0x00ffffff-no-rj" alt="avatar" />
+                                                                                </div>
+                                                                                <div class="result_comment ">
+                                                                                    <h4>Sugito</h4>
+                                                                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's.
+                                                                                    </p>
+                                                                                    <div class="tools_comment">
+
+                                                                                        <i class="fa fa-thumbs-o-up fa-2x"></i> <span class="count">5</span>
+                                                                                        <i class="fa fa-thumbs-o-down fa-2x"></i> <span class="count">3</span>
+                                                                                        <span>YANITLA</span>
+                                                                                    </div>
+                                                                                    <ul class="child_replay"></ul>
+                                                                                </div>
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </li>
+
+
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div id="menu-tab" class="closed">Yorumları Göster/Gizle</div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+
+                                <div id="v-list" class="video-li">
+
+                                    <div id="vli-info">
+                                        <div id="upper-info">
+                                            <div id="li-titles">
+                                                <div class="title">Web Development Videos</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel">Rejwan Islam</a> -
+                                                    <span id="video-count">1 / 2</span>
+                                                </div>
+                                            </div>
+                                            <div id="drop-icon"></div>
+                                        </div>
+                                        <div id="lower-info">
+                                            <div id="btn-repeat"></div>
+                                            <div id="btn-suffle"></div>
+                                            <div id="btn-save"></div>
+                                        </div>
+                                    </div>
+
+                                    <div id="vli-videos">
+                                        <div class="video-con active-con" video="https://www.youtube.com/embed/BVyTt3QJfIA">
+                                            <div class="index title">0</div>
+                                            <div class="thumb">
+                                                <img src="https://i.ytimg.com/vi/BVyTt3QJfIA/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLDNZqTQuBOTuGgLFnsrstzTBdJhgg" alt="">
+                                            </div>
+                                            <div class="v-titles">
+                                                <div class="title">Google chrome custom new tab</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="video-con" video="https://www.youtube.com/embed/O-D1VsX7J4s">
+                                            <div class="index title">0</div>
+                                            <div class="thumb">
+                                                <img src="https://i.ytimg.com/vi/O-D1VsX7J4s/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLAmbtXY8Fuq9TWBwe9KPru9q6nnyg" alt="">
+                                            </div>
+                                            <div class="v-titles">
+                                                <div class="title">Awesome Periodic Table using Html and Css</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="video-con" video="https://www.youtube.com/embed/glqWxsQmY3U">
+                                            <div class="index title">0</div>
+                                            <div class="thumb">
+                                                <img src="https://i.ytimg.com/vi/glqWxsQmY3U/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLA32gZV0D42Si70gSXZ3B4Aoz4P1w" alt="">
+                                            </div>
+                                            <div class="v-titles">
+                                                <div class="title">JavaScript Debugging - Android Button Effect</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="video-con" video="https://www.youtube.com/embed/Eg4hPSMRtds">
+                                            <div class="index title">0</div>
+                                            <div class="thumb">
+                                                <img src="https://i.ytimg.com/vi/Eg4hPSMRtds/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBrnuS1go5YalWfku7pWWqScHvkkQ" alt="">
+                                            </div>
+                                            <div class="v-titles">
+                                                <div class="title">Calculator: Parallel and series resistance</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="video-con" video="https://www.youtube.com/embed/Eg4hPSMRtds">
+                                            <div class="index title">0</div>
+                                            <div class="thumb">
+                                                <img src="https://i.ytimg.com/vi/Eg4hPSMRtds/hqdefault.jpg?sqp=-oaymwEbCKgBEF5IVfKriqkDDggBFQAAiEIYAXABwAEG&rs=AOn4CLBrnuS1go5YalWfku7pWWqScHvkkQ" alt="">
+                                            </div>
+                                            <div class="v-titles">
+                                                <div class="title">Calculator: Parallel and series resistance</div>
+                                                <div class="sub-title">
+                                                    <a href="https://www.youtube.com/channel/UCD7RHHe-SuFiTWEsC0S1dLg" class="channel" target="_blank">Rejwan Islam</a>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="row vli-list">
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 single-video-list">
+                                            <div class="card channel-list-single d-grid">
+                                                <iframe width="100%" height="100" src="https://www.youtube.com/embed/wyy6o_gQQic"> </iframe>
+                                                <div class="card-body d-grid channel-list-layout">
+                                                    <div class="card-title">
+                                                        <div class="d-grid video-list-title">
+                                                            <h3>NASA'nın Geliştirdiği Elektronik Kolyeyi Yaptım</h3><i class="fa fa-ellipsis-v"></i>
+                                                        </div>
+                                                        <h4>Lezzetli Robot Tarifleri <br> 4,9 Mn görüntüleme</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section  pb-100">
+                    <div class="container">
+                        <div class="row">
+                            <div class="new-desc">
+
+                            </div>
+                            <div class="vli-new-list">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </article>
+        </div>
+        <!-- User Nav -->
+        <nav id="nav" class="animated hide">
+            <div class="user-id">
+                <div><i class="fa fa-circle fa-2x"></i></div>
+                <div>
+                    <div id="user-name">User name</div>
+                    <div><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="e49197819689858d88a48389858d88ca878b89">[email&#160;protected]</a></div>
+                </div>
+            </div>
+            <div class="nav-groups">
+                <ul class="acc-nav">
+                    <li class="nav-item"><i class="fa fa-user-circle fa-lg "></i><span>My channel</span></li>
+                    <li class="nav-item"><i class="fa fa-cog fa-lg "></i><span>Creator studio</span></li>
+                    <li class="nav-item"><i class="fa fa-users fa-lg "></i><span>Switch account</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                    <li class="nav-item"><i class="fa fa-sign-out-alt fa-lg "></i><span>Sign out</span></li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="main-config">
+                    <li class="nav-item"><i class="fa fa-moon fa-lg "></i><span>Dark theme: off</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                    <li class="nav-item"><i class="fa fa-cog fa-lg "></i><span>Settings</span></li>
+                    <li class="nav-item"><i class="fa fa-question-circle fa-lg "></i><span>Help</span></li>
+                    <li class="nav-item"><i class="fa fa-comment fa-lg "></i><span>Send feedback</span></li>
+                </ul>
+                <div class="divider"></div>
+                <ul class="misc-config">
+                    <li class="nav-item"><span>Language: English</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Location: Colombia</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Restricted Mode: Off</span><i class="fa fa-chevron-right fa-lg "></i>
+                    </li>
+                    <li class="nav-item"><span>Restore old Youtube</span><i class="fa fa-chevron-right fa-lg "></i></li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+    <script>
+        function qs(elem) {
+            return document.querySelector(elem);
+        }
+
+        function qsa(elem) {
+            return document.querySelectorAll(elem);
+        }
+
+        // globals
+        var activeCon = 0,
+            totalCons = 0;
+
+        // elements
+        const v_cons = qsa(".video-con"),
+            a_cons = qsa(".active-con"),
+            v_count = qs("#video-count"),
+            info_btns = qsa("#lower-info div"),
+            drop_icon = qs("#drop-icon"),
+            video_list = qs("#v-list"),
+            display = qs("#display-frame");
+
+        // activate container
+        function activate(con) {
+            deactivateAll();
+            indexAll();
+            countVideos(con.querySelector(".index").innerHTML);
+            con.classList.add("active-con");
+            con.querySelector(".index").innerHTML = "►";
+        }
+        // deactivate all container
+        function deactivateAll() {
+            v_cons.forEach(container => {
+                container.classList.remove("active-con");
+            });
+        }
+        // index containers
+        function indexAll() {
+            var i = 1;
+            v_cons.forEach(container => {
+                container.querySelector(".index").innerHTML = i;
+                i++;
+            });
+        }
+        // update video count
+        function countVideos(active) {
+            v_count.innerHTML = active + " / " + v_cons.length;
+        }
+        // icon activate
+        function toggle_icon(btn) {
+            if (btn.classList.contains("icon-active")) {
+                btn.classList.remove("icon-active");
+            } else btn.classList.add("icon-active");
+        }
+        // toggle video list
+        function toggle_list() {
+            if (video_list.classList.contains("li-collapsed")) {
+                drop_icon.style.transform = "rotate(0deg)";
+                video_list.classList.remove("li-collapsed");
+            } else {
+                drop_icon.style.transform = "rotate(180deg)";
+                video_list.classList.add("li-collapsed");
+            }
+        }
+
+        function loadVideo(url) {
+            display.setAttribute("src", url);
+        }
+
+        //******************
+        // Main Function heres
+        //******************
+        window.addEventListener("load", function() {
+            // starting calls
+            indexAll(); // container indexes
+            countVideos(1);
+            activate(v_cons[0]);
+            loadVideo(v_cons[0].getAttribute("video"));
+
+            // Event handeling goes here
+            // on each video container click
+            v_cons.forEach(container => {
+                container.addEventListener("click", () => {
+                    activate(container);
+                    loadVideo(container.getAttribute("video"));
+                });
+            });
+            // on each button click
+            info_btns.forEach(button => {
+                button.addEventListener("click", () => {
+                    toggle_icon(button);
+                });
+            });
+            // drop icon click
+            drop_icon.addEventListener("click", () => {
+                toggle_list();
+            });
+        });
+        //# sourceURL=pen.js
+    </script>
+    <script>
+        var animationEnd = function(el) {
+            var animations = {
+                animation: 'animationend',
+                OAnimation: 'oAnimationEnd',
+                MozAnimation: 'mozAnimationEnd',
+                WebkitAnimation: 'webkitAnimationEnd'
+            };
+
+
+            for (var t in animations) {
+                if (el.style[t] !== undefined) {
+                    return animations[t];
+                }
+            }
+        }(document.createElement('div'));
+
+        const menuBtn = document.querySelector('header .home-menu .menu-icon');
+        const aside = document.querySelector('.wrapper .content aside');
+
+        aside.addEventListener(animationEnd, function(e) {
+            if (aside.classList.contains("slideOutLeft")) {
+                aside.classList.remove("slideOutLeft");
+                aside.classList.add("hide");
+            }
+            e.preventDefault();
+        });
+
+        menuBtn.addEventListener("click", toggleMenu);
+
+
+        function toggleMenu() {
+            if (aside.classList.contains("hide")) {
+                aside.classList.remove("hide");
+                aside.classList.add("slideInLeft");
+            } else {
+                aside.classList.remove("slideInLeft");
+                aside.classList.add("slideOutLeft");
+            }
+        }
+
+        const navBtn = document.querySelector('header .main-head .nav-icon');
+        const nav = document.querySelector('.wrapper nav');
+
+        nav.addEventListener(animationEnd, function(e) {
+            if (nav.classList.contains("fadeOut")) {
+                nav.classList.remove("fadeOut");
+                nav.classList.add("hide");
+            }
+            e.preventDefault();
+        });
+
+        navBtn.addEventListener("click", toggleNav);
+
+        function toggleNav() {
+            if (nav.classList.contains("hide")) {
+                nav.classList.remove("hide");
+                nav.classList.add("fadeIn");
+            } else {
+                nav.classList.remove("fadeIn");
+                nav.classList.add("fadeOut");
+            }
+        }
+
+        // Popper JS
+
+        const reference = document.querySelector('#video-box1');
+        const tooltip = document.querySelector('#popperText');
+
+        var popper = new Popper(reference, tooltip, {
+            placement: 'top'
+        });
+
+
+        popper.show();
+        //# sourceURL=pen.js
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('#list_comment').on('click', '.like', function(e) {
+                $current = $(this);
+                var x = $current.closest('div').find('.like').text().trim();
+                var y = parseInt($current.closest('div').find('.count').text().trim());
+
+                if (x === "Like") {
+                    $current.closest('div').find('.like').text('Unlike');
+                    $current.closest('div').find('.count').text(y + 1);
+                } else if (x === "Unlike") {
+                    $current.closest('div').find('.like').text('Like');
+                    $current.closest('div').find('.count').text(y - 1);
+                } else {
+                    var replay = $current.closest('div').find('.like').text('Like');
+                    $current.closest('div').find('.count').text(y - 1);
+                }
+            });
+
+
+        });
+
+
+        function cancel_reply() {
+            $('.reply_comment').remove();
+        }
+        //# sourceURL=pen.js
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $("#first_comment").hide();
+            $("#reply").hide();
+
+
+
+            $('.commentar').click(function() {
+
+                $("#first_comment").show();
+
+
+            });
+            $('.commentar_reply').click(function() {
+
+                $("#reply").show();
+
+
+            });
+            $('#reply-delete').click(function() {
+
+                $("#reply").hide();
+
+
+            });
+            $('#first-delete').click(function() {
+
+                $("#first_comment").hide();
+
+
+            });
+
+        });
+        $(document).on('click', '#menu-tab', function() {
+            $('#menu-nav').slideToggle('slow');
+        });
+        $(document).ready(function() {
+
+
+            $(".desktop-hide").hide();
+            $(".mobile-hide").show();
+
+            if ($(window).width() < 768) {
+                $(".mobile-hide").hide();
+                $(".desktop-hide").show();
+
+
+                var newArea = $(".video-desc").html();
+                $(".video-desc").remove();
+                $(".new-desc").append(newArea);
+                $(".new-desc .desc").css({
+                    "grid-template-columns": "20% 20% 20% 20% 20%"
+                });
+                $(" .new-desc .desc span")
+                    .css("display", "none")
+
+                var newList = $(".vli-list").html();
+                $(".vli-list").remove();
+                $(".vli-new-list").append(newList);
+                $(".channel-list-layout .card-title").css("padding", "0 0.5rem")
+            };
+        });
+        const buttonDarkMode = document.querySelector("#switch");
+
+        buttonDarkMode.addEventListener("click", () => {
+            document.body.classList.toggle("dark");
+            buttonDarkMode.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
